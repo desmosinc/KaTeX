@@ -112,6 +112,15 @@ defineFunction("\\sqrt", {
     };
 });
 
+defineFunction("\\operatorname", {
+    numArgs: 1,
+}, function (context, args) {
+    return {
+        type: "operatorname",
+        body: args[0]
+    };
+});
+
 // Some non-mathy text
 defineFunction("\\text", {
     numArgs: 1,
