@@ -1,5 +1,5 @@
 /* eslint no-constant-condition:0 */
-var fontMetrics = require("./fontMetrics");
+var metricNames = require("./metricNames");
 var parseData = require("./parseData");
 var ParseError = require("./ParseError");
 
@@ -163,7 +163,7 @@ defineEnvironment("cases", {
             type: "align",
             align: "l",
             pregap: 0,
-            postgap: fontMetrics.metrics.quad,
+            postgap: metricNames.quad,
         }, {
             type: "align",
             align: "l",
